@@ -1,0 +1,61 @@
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Maymuncha</title>
+
+</head>
+
+<body>
+<form name="calc" id="calculator">
+	<tr>
+	<br>
+		<input type="text" name="input" size="16" class="one">
+	</br>
+	</tr>
+	<tr>
+	<td>
+		<input type="text" name="input" size="16" class="two">
+	</td>
+	</tr>
+	<br>
+	<td class="buttons">	
+		<input type="button" name="doit" value="+" onclick="plus()">
+		<input type="button" name="doit" value="-" onclick="minus()">
+		<input type="button" name="doit" value="*" onclick="kopay()">
+		<input type="button" name="doit" value="/" onclick="buluv()">
+	</br>
+	</tr>
+	<script type="text/javascript">
+		function plus() {
+			var a = document.getElementsByTagName('input')[0];
+			var b = document.getElementsByTagName('input')[1];
+			var s = Number(a.value);
+			var d = Number(b.value);
+			var g = s+d; alert("A + B = " +g);		
+		}
+		function minus() {
+			var a = document.getElementsByTagName('input')[0];
+			var b = document.getElementsByTagName('input')[1];
+			var s = Number(a.value);
+			var d = Number(b.value);
+			var g = s-d; alert("A - B = " +g);		
+		}
+		function kopay() {
+			var a = document.getElementsByTagName('input')[0];
+			var b = document.getElementsByTagName('input')[1];
+			var s = Number(a.value);
+			var d = Number(b.value);
+			var g = s*d; alert("A * B = " +g);		
+		}
+		function buluv() {
+			var a = document.getElementsByTagName('input')[0];
+			var b = document.getElementsByTagName('input')[1];
+			var s = Number(a.value);
+			var d = Number(b.value);
+			var g = s/d; alert("A / B = " +g);		
+		}
+		
+	</script>
+</form>
+</body>
+</html>
